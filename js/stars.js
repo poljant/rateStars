@@ -8,12 +8,13 @@ var s5 = document.getElementById('s5');
 
 var starmax = 5;
 var ratingStar = 0;
-var color0 = 'grey';
-var color1 = 'red';
-var color2 = 'green';
-var color3 = 'yellow';
-var color4 = 'blue';
-var colorx = color4;
+var colorGrey = 'grey';
+var colorRed = 'red';
+var colorGreen = 'green';
+var colorYellow = 'yellow';
+var colorBlue = 'blue';
+var colorGold = 'gold';
+var colorStar = colorBlue;
 /*var imgStarEmpty = '&#E83A;'
 var imgStarHover = '$#E838;'
 var imgStarClick = '$#E838;*/
@@ -39,7 +40,7 @@ function starReset(nr) {
 	for (var i = 1; i <= nr; i++) {
 		$('#s' + i).html('star_border');
 		$('#s' + i).css({'filter':'brightness(1)',
-						 'color' : color0,
+						 'color' : colorGrey,
 						 'transition' : 'all .1s ease-in-out'});
 	}
 }
@@ -48,10 +49,10 @@ function starMouseover(nr) {
 	'use strict';
 	if (ratingStar === 0) {
 		for (var j = 1; j <= nr; j++) {
-			$('#s' + j).css('color',colorx);
+			$('#s' + j).css('color',colorStar);
 			}
 		for (var i = nr + 1; i <= starmax; i++) {
-			$('#s' + i).css({ 'color' : color0,
+			$('#s' + i).css({ 'color' : colorGrey,
 							  'filter' : 'brightness(1)',
 							  'transition' : 'all .2s ease-in-out'});
 			}
@@ -65,7 +66,7 @@ function starClick(nr) {
 	for (var i = 1; i <= nr; i++) {
 		$('#s' + i).html('star');
 		$('#s' + i).css({'filter':'brightness(1)',
-						 'color' : colorx,
+						 'color' : colorStar,
 						 'transition': 'all .3s ease-in-out'});
 	}
 	ratingStar = nr;
