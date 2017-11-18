@@ -1,0 +1,34 @@
+.stars-box,
+.stars {
+	background-color: #FFF;
+	position: relative;
+	text-align: center;
+	overflow: hidden;
+	padding: 0;
+}
+
+.stars-box h4 {
+	color: blue;
+	text-align: center;
+}
+
+.stars {
+	width: 120px;
+	height: 24px;
+	margin: auto;
+	font-size: 0px;
+
+}
+
+.star {
+	//width: 24px;
+	//height: 24px;
+	display: inline-block;
+	margin: 0;
+	text-align: center;
+	cursor: pointer;
+	padding: 0;
+	filter: brightness(80%);
+	transition: all .2s ease-in-out;
+}
+
