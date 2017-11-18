@@ -12,7 +12,7 @@ Jak w prosty sposób zrobić na stronie www ocenę za pomocą gwiazdek.
 Program korzysta z ikon google "https://fonts.googleapis.com/icon?family=Material+Icons".
 Oraz jquery (korzystam z załączonego pliku jquery-3-2-1.min.js).
 
-Strona demo http://www.poljant.pl/ratestars/index.html.
+Strona demo http://ratestars.poljant.pl/index.html.
 
 
 
